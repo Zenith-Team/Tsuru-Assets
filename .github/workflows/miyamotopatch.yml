@@ -12,11 +12,13 @@ jobs:
     runs-on: "ubuntu-latest"
 
     steps:
+      - name: "Debug"
+        run: ls && echo `ls`
+        
       - name: "Pack"
         run: |
           sudo apt install -y zip
-          echo `ls`
-          zip -r TsuruMiyamotoPatch.zip ./MiyamotoPatch/Tsuru/**
+          zip -r TsuruMiyamotoPatch.zip ./**
 
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
