@@ -12,15 +12,13 @@ jobs:
     runs-on: "ubuntu-latest"
 
     steps:
-      - name: "Debug"
-        run: ls && echo `ls`
-        
-      - name: "Pack"
-        run: |
-          sudo apt install -y zip
-          zip -r TsuruMiyamotoPatch.zip ./**
+      - uses: actions/checkout@v2
+      - uses: papeloto/action-zip@v1
+        with:
+          files: MiyamotoPatch/Tsuru/
+          dest: TsuruMiyamotoPatch.zip
 
-      - uses: "marvinpinto/action-automatic-releases@latest"
+      - uses: marvinpinto/action-automatic-releases@latest
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           automatic_release_tag: "latest"
