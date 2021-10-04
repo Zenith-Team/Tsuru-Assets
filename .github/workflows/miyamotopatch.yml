@@ -15,7 +15,8 @@ jobs:
       - name: "Pack"
         run: |
           sudo apt install -y zip
-          zip -r TsuruMiyamotoPatch.zip . -i MiyamotoPatch/Tsuru
+          ls
+          zip -r TsuruMiyamotoPatch.zip . -i MiyamotoPatch/Tsuru/
 
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
