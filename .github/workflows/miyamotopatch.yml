@@ -4,7 +4,7 @@ name: "package-miyamoto-patch"
 on:
   push:
     paths:
-      - 'MiyamotoPatch/Tsuru/**'
+      - "MiyamotoPatch/Tsuru/**"
 
 jobs:
   auto-release:
