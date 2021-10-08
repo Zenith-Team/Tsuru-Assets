@@ -1,0 +1,17 @@
+{
+    "files.associations": {
+        "README": "markdown",
+        "*.wsb": "xml",
+        "config": "cpp",
+        "cstring": "cpp",
+        "typeinfo": "cpp"
+    },
+    "C_Cpp.intelliSenseCacheSize": 0,
+    "C_Cpp.default.systemIncludePath": [
+        "C:/ghs/multi5327/ansi/",
+        "C:/ghs/multi5327/scxx/",
+        "C:/ghs/multi5327/ecxx/",
+        "C:/ghs/multi5327/eecxx/",
+        "C:/ghs/multi5327/include/"
+    ]
+}
