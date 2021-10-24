@@ -54,4 +54,11 @@
 	<sprite id="731" name="Falling Chestnut"></sprite>
 	<sprite id="732" name="Task Changer" notes="! Unfinished"></sprite>
 	<sprite id="733" name="Cataquack" notes="! Unfinished + Requires model"></sprite>
+	<sprite id="734" name="Time Clock" notes="Adds time to the timer when collected"></sprite>
+	<sprite id="735" name="Effect Spawner" notes="Spawns sound and particle effects"></sprite>
+	<sprite id="736" name="Angry Sun"></sprite>
+	<sprite id="737" name="Angry Moon"></sprite>
+	<sprite id="738" name="Rainbow Light" notes="A configurable colorful light source"></sprite>
+	<sprite id="739" name="Wave Platform" notes="Platform for water waves"></sprite>
+	<sprite id="740" name="Debug Actor" notes="Actor useful for debugging various things"></sprite>
 </sprites>
