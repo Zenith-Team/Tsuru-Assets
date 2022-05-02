@@ -64,4 +64,298 @@
     <sprite id="738" name="Rainbow Light" notes="A configurable colorful light source"></sprite>
     <sprite id="739" name="Wave Platform" notes="Platform for water waves"></sprite>
     <sprite id="740" name="Debug Actor" notes="Actor useful for debugging various things"></sprite>
+    <sprite id="744" name="Model Loader" notes="Loads any model.">
+        <value nybble="5-6" title="Model Filename String Bank ID"/>
+        <value nybble="7-8" title="Model Name String Bank ID"/>
+    </sprite>
+    <sprite id="745" name="String Bank" notes="Stores an arbitrary 16 character string to be used by other sprites, uses Initial State as ID. Use layer setting for chaining (Layer 1 = Standalone string/First string of chain, Layer 2 = Second string of chain, Layer 0 = Last string of chain) for up to 48 characters.">
+        <list bit="1-6" title="Char 1">
+            <entry value="0">NULL</entry><entry value="1">a</entry><entry value="2">b</entry><entry value="3">c</entry>
+            <entry value="4">d</entry><entry value="5">e</entry><entry value="6">f</entry><entry value="7">g</entry>
+            <entry value="8">h</entry><entry value="9">i</entry><entry value="10">j</entry><entry value="11">k</entry>
+            <entry value="12">l</entry><entry value="13">m</entry><entry value="14">n</entry><entry value="15">o</entry>
+            <entry value="16">p</entry><entry value="17">q</entry><entry value="18">r</entry><entry value="19">s</entry>
+            <entry value="20">t</entry><entry value="21">u</entry><entry value="22">v</entry><entry value="23">w</entry>
+            <entry value="24">x</entry><entry value="25">y</entry><entry value="26">z</entry><entry value="27">0</entry>
+            <entry value="28">1</entry><entry value="29">2</entry><entry value="30">3</entry><entry value="31">4</entry>
+            <entry value="32">5</entry><entry value="33">A</entry><entry value="34">B</entry><entry value="35">C</entry>
+            <entry value="36">D</entry><entry value="37">E</entry><entry value="38">F</entry><entry value="39">G</entry>
+            <entry value="40">H</entry><entry value="41">I</entry><entry value="42">J</entry><entry value="43">K</entry>
+            <entry value="44">L</entry><entry value="45">M</entry><entry value="46">N</entry><entry value="47">O</entry>
+            <entry value="48">P</entry><entry value="49">Q</entry><entry value="50">R</entry><entry value="51">S</entry>
+            <entry value="52">T</entry><entry value="53">U</entry><entry value="54">V</entry><entry value="55">W</entry>
+            <entry value="56">X</entry><entry value="57">Y</entry><entry value="58">Z</entry><entry value="59">6</entry>
+            <entry value="60">7</entry><entry value="61">8</entry><entry value="62">9</entry><entry value="63">_</entry>
+        </list>
+        <list bit="7-12" title="Char 2">
+            <entry value="0">NULL</entry><entry value="1">a</entry><entry value="2">b</entry><entry value="3">c</entry>
+            <entry value="4">d</entry><entry value="5">e</entry><entry value="6">f</entry><entry value="7">g</entry>
+            <entry value="8">h</entry><entry value="9">i</entry><entry value="10">j</entry><entry value="11">k</entry>
+            <entry value="12">l</entry><entry value="13">m</entry><entry value="14">n</entry><entry value="15">o</entry>
+            <entry value="16">p</entry><entry value="17">q</entry><entry value="18">r</entry><entry value="19">s</entry>
+            <entry value="20">t</entry><entry value="21">u</entry><entry value="22">v</entry><entry value="23">w</entry>
+            <entry value="24">x</entry><entry value="25">y</entry><entry value="26">z</entry><entry value="27">0</entry>
+            <entry value="28">1</entry><entry value="29">2</entry><entry value="30">3</entry><entry value="31">4</entry>
+            <entry value="32">5</entry><entry value="33">A</entry><entry value="34">B</entry><entry value="35">C</entry>
+            <entry value="36">D</entry><entry value="37">E</entry><entry value="38">F</entry><entry value="39">G</entry>
+            <entry value="40">H</entry><entry value="41">I</entry><entry value="42">J</entry><entry value="43">K</entry>
+            <entry value="44">L</entry><entry value="45">M</entry><entry value="46">N</entry><entry value="47">O</entry>
+            <entry value="48">P</entry><entry value="49">Q</entry><entry value="50">R</entry><entry value="51">S</entry>
+            <entry value="52">T</entry><entry value="53">U</entry><entry value="54">V</entry><entry value="55">W</entry>
+            <entry value="56">X</entry><entry value="57">Y</entry><entry value="58">Z</entry><entry value="59">6</entry>
+            <entry value="60">7</entry><entry value="61">8</entry><entry value="62">9</entry><entry value="63">_</entry>
+        </list>
+        <list bit="13-18" title="Char 3">
+            <entry value="0">NULL</entry><entry value="1">a</entry><entry value="2">b</entry><entry value="3">c</entry>
+            <entry value="4">d</entry><entry value="5">e</entry><entry value="6">f</entry><entry value="7">g</entry>
+            <entry value="8">h</entry><entry value="9">i</entry><entry value="10">j</entry><entry value="11">k</entry>
+            <entry value="12">l</entry><entry value="13">m</entry><entry value="14">n</entry><entry value="15">o</entry>
+            <entry value="16">p</entry><entry value="17">q</entry><entry value="18">r</entry><entry value="19">s</entry>
+            <entry value="20">t</entry><entry value="21">u</entry><entry value="22">v</entry><entry value="23">w</entry>
+            <entry value="24">x</entry><entry value="25">y</entry><entry value="26">z</entry><entry value="27">0</entry>
+            <entry value="28">1</entry><entry value="29">2</entry><entry value="30">3</entry><entry value="31">4</entry>
+            <entry value="32">5</entry><entry value="33">A</entry><entry value="34">B</entry><entry value="35">C</entry>
+            <entry value="36">D</entry><entry value="37">E</entry><entry value="38">F</entry><entry value="39">G</entry>
+            <entry value="40">H</entry><entry value="41">I</entry><entry value="42">J</entry><entry value="43">K</entry>
+            <entry value="44">L</entry><entry value="45">M</entry><entry value="46">N</entry><entry value="47">O</entry>
+            <entry value="48">P</entry><entry value="49">Q</entry><entry value="50">R</entry><entry value="51">S</entry>
+            <entry value="52">T</entry><entry value="53">U</entry><entry value="54">V</entry><entry value="55">W</entry>
+            <entry value="56">X</entry><entry value="57">Y</entry><entry value="58">Z</entry><entry value="59">6</entry>
+            <entry value="60">7</entry><entry value="61">8</entry><entry value="62">9</entry><entry value="63">_</entry>
+        </list>
+        <list bit="19-24" title="Char 4">
+            <entry value="0">NULL</entry><entry value="1">a</entry><entry value="2">b</entry><entry value="3">c</entry>
+            <entry value="4">d</entry><entry value="5">e</entry><entry value="6">f</entry><entry value="7">g</entry>
+            <entry value="8">h</entry><entry value="9">i</entry><entry value="10">j</entry><entry value="11">k</entry>
+            <entry value="12">l</entry><entry value="13">m</entry><entry value="14">n</entry><entry value="15">o</entry>
+            <entry value="16">p</entry><entry value="17">q</entry><entry value="18">r</entry><entry value="19">s</entry>
+            <entry value="20">t</entry><entry value="21">u</entry><entry value="22">v</entry><entry value="23">w</entry>
+            <entry value="24">x</entry><entry value="25">y</entry><entry value="26">z</entry><entry value="27">0</entry>
+            <entry value="28">1</entry><entry value="29">2</entry><entry value="30">3</entry><entry value="31">4</entry>
+            <entry value="32">5</entry><entry value="33">A</entry><entry value="34">B</entry><entry value="35">C</entry>
+            <entry value="36">D</entry><entry value="37">E</entry><entry value="38">F</entry><entry value="39">G</entry>
+            <entry value="40">H</entry><entry value="41">I</entry><entry value="42">J</entry><entry value="43">K</entry>
+            <entry value="44">L</entry><entry value="45">M</entry><entry value="46">N</entry><entry value="47">O</entry>
+            <entry value="48">P</entry><entry value="49">Q</entry><entry value="50">R</entry><entry value="51">S</entry>
+            <entry value="52">T</entry><entry value="53">U</entry><entry value="54">V</entry><entry value="55">W</entry>
+            <entry value="56">X</entry><entry value="57">Y</entry><entry value="58">Z</entry><entry value="59">6</entry>
+            <entry value="60">7</entry><entry value="61">8</entry><entry value="62">9</entry><entry value="63">_</entry>
+        </list>
+        <list bit="25-30" title="Char 5">
+            <entry value="0">NULL</entry><entry value="1">a</entry><entry value="2">b</entry><entry value="3">c</entry>
+            <entry value="4">d</entry><entry value="5">e</entry><entry value="6">f</entry><entry value="7">g</entry>
+            <entry value="8">h</entry><entry value="9">i</entry><entry value="10">j</entry><entry value="11">k</entry>
+            <entry value="12">l</entry><entry value="13">m</entry><entry value="14">n</entry><entry value="15">o</entry>
+            <entry value="16">p</entry><entry value="17">q</entry><entry value="18">r</entry><entry value="19">s</entry>
+            <entry value="20">t</entry><entry value="21">u</entry><entry value="22">v</entry><entry value="23">w</entry>
+            <entry value="24">x</entry><entry value="25">y</entry><entry value="26">z</entry><entry value="27">0</entry>
+            <entry value="28">1</entry><entry value="29">2</entry><entry value="30">3</entry><entry value="31">4</entry>
+            <entry value="32">5</entry><entry value="33">A</entry><entry value="34">B</entry><entry value="35">C</entry>
+            <entry value="36">D</entry><entry value="37">E</entry><entry value="38">F</entry><entry value="39">G</entry>
+            <entry value="40">H</entry><entry value="41">I</entry><entry value="42">J</entry><entry value="43">K</entry>
+            <entry value="44">L</entry><entry value="45">M</entry><entry value="46">N</entry><entry value="47">O</entry>
+            <entry value="48">P</entry><entry value="49">Q</entry><entry value="50">R</entry><entry value="51">S</entry>
+            <entry value="52">T</entry><entry value="53">U</entry><entry value="54">V</entry><entry value="55">W</entry>
+            <entry value="56">X</entry><entry value="57">Y</entry><entry value="58">Z</entry><entry value="59">6</entry>
+            <entry value="60">7</entry><entry value="61">8</entry><entry value="62">9</entry><entry value="63">_</entry>
+        </list>
+        <list bit="31-36" title="Char 6">
+            <entry value="0">NULL</entry><entry value="1">a</entry><entry value="2">b</entry><entry value="3">c</entry>
+            <entry value="4">d</entry><entry value="5">e</entry><entry value="6">f</entry><entry value="7">g</entry>
+            <entry value="8">h</entry><entry value="9">i</entry><entry value="10">j</entry><entry value="11">k</entry>
+            <entry value="12">l</entry><entry value="13">m</entry><entry value="14">n</entry><entry value="15">o</entry>
+            <entry value="16">p</entry><entry value="17">q</entry><entry value="18">r</entry><entry value="19">s</entry>
+            <entry value="20">t</entry><entry value="21">u</entry><entry value="22">v</entry><entry value="23">w</entry>
+            <entry value="24">x</entry><entry value="25">y</entry><entry value="26">z</entry><entry value="27">0</entry>
+            <entry value="28">1</entry><entry value="29">2</entry><entry value="30">3</entry><entry value="31">4</entry>
+            <entry value="32">5</entry><entry value="33">A</entry><entry value="34">B</entry><entry value="35">C</entry>
+            <entry value="36">D</entry><entry value="37">E</entry><entry value="38">F</entry><entry value="39">G</entry>
+            <entry value="40">H</entry><entry value="41">I</entry><entry value="42">J</entry><entry value="43">K</entry>
+            <entry value="44">L</entry><entry value="45">M</entry><entry value="46">N</entry><entry value="47">O</entry>
+            <entry value="48">P</entry><entry value="49">Q</entry><entry value="50">R</entry><entry value="51">S</entry>
+            <entry value="52">T</entry><entry value="53">U</entry><entry value="54">V</entry><entry value="55">W</entry>
+            <entry value="56">X</entry><entry value="57">Y</entry><entry value="58">Z</entry><entry value="59">6</entry>
+            <entry value="60">7</entry><entry value="61">8</entry><entry value="62">9</entry><entry value="63">_</entry>
+        </list>
+        <list bit="37-42" title="Char 7">
+            <entry value="0">NULL</entry><entry value="1">a</entry><entry value="2">b</entry><entry value="3">c</entry>
+            <entry value="4">d</entry><entry value="5">e</entry><entry value="6">f</entry><entry value="7">g</entry>
+            <entry value="8">h</entry><entry value="9">i</entry><entry value="10">j</entry><entry value="11">k</entry>
+            <entry value="12">l</entry><entry value="13">m</entry><entry value="14">n</entry><entry value="15">o</entry>
+            <entry value="16">p</entry><entry value="17">q</entry><entry value="18">r</entry><entry value="19">s</entry>
+            <entry value="20">t</entry><entry value="21">u</entry><entry value="22">v</entry><entry value="23">w</entry>
+            <entry value="24">x</entry><entry value="25">y</entry><entry value="26">z</entry><entry value="27">0</entry>
+            <entry value="28">1</entry><entry value="29">2</entry><entry value="30">3</entry><entry value="31">4</entry>
+            <entry value="32">5</entry><entry value="33">A</entry><entry value="34">B</entry><entry value="35">C</entry>
+            <entry value="36">D</entry><entry value="37">E</entry><entry value="38">F</entry><entry value="39">G</entry>
+            <entry value="40">H</entry><entry value="41">I</entry><entry value="42">J</entry><entry value="43">K</entry>
+            <entry value="44">L</entry><entry value="45">M</entry><entry value="46">N</entry><entry value="47">O</entry>
+            <entry value="48">P</entry><entry value="49">Q</entry><entry value="50">R</entry><entry value="51">S</entry>
+            <entry value="52">T</entry><entry value="53">U</entry><entry value="54">V</entry><entry value="55">W</entry>
+            <entry value="56">X</entry><entry value="57">Y</entry><entry value="58">Z</entry><entry value="59">6</entry>
+            <entry value="60">7</entry><entry value="61">8</entry><entry value="62">9</entry><entry value="63">_</entry>
+        </list>
+        <list bit="43-48" title="Char 8">
+            <entry value="0">NULL</entry><entry value="1">a</entry><entry value="2">b</entry><entry value="3">c</entry>
+            <entry value="4">d</entry><entry value="5">e</entry><entry value="6">f</entry><entry value="7">g</entry>
+            <entry value="8">h</entry><entry value="9">i</entry><entry value="10">j</entry><entry value="11">k</entry>
+            <entry value="12">l</entry><entry value="13">m</entry><entry value="14">n</entry><entry value="15">o</entry>
+            <entry value="16">p</entry><entry value="17">q</entry><entry value="18">r</entry><entry value="19">s</entry>
+            <entry value="20">t</entry><entry value="21">u</entry><entry value="22">v</entry><entry value="23">w</entry>
+            <entry value="24">x</entry><entry value="25">y</entry><entry value="26">z</entry><entry value="27">0</entry>
+            <entry value="28">1</entry><entry value="29">2</entry><entry value="30">3</entry><entry value="31">4</entry>
+            <entry value="32">5</entry><entry value="33">A</entry><entry value="34">B</entry><entry value="35">C</entry>
+            <entry value="36">D</entry><entry value="37">E</entry><entry value="38">F</entry><entry value="39">G</entry>
+            <entry value="40">H</entry><entry value="41">I</entry><entry value="42">J</entry><entry value="43">K</entry>
+            <entry value="44">L</entry><entry value="45">M</entry><entry value="46">N</entry><entry value="47">O</entry>
+            <entry value="48">P</entry><entry value="49">Q</entry><entry value="50">R</entry><entry value="51">S</entry>
+            <entry value="52">T</entry><entry value="53">U</entry><entry value="54">V</entry><entry value="55">W</entry>
+            <entry value="56">X</entry><entry value="57">Y</entry><entry value="58">Z</entry><entry value="59">6</entry>
+            <entry value="60">7</entry><entry value="61">8</entry><entry value="62">9</entry><entry value="63">_</entry>
+        </list>
+        <list bit="49-54" title="Char 9">
+            <entry value="0">NULL</entry><entry value="1">a</entry><entry value="2">b</entry><entry value="3">c</entry>
+            <entry value="4">d</entry><entry value="5">e</entry><entry value="6">f</entry><entry value="7">g</entry>
+            <entry value="8">h</entry><entry value="9">i</entry><entry value="10">j</entry><entry value="11">k</entry>
+            <entry value="12">l</entry><entry value="13">m</entry><entry value="14">n</entry><entry value="15">o</entry>
+            <entry value="16">p</entry><entry value="17">q</entry><entry value="18">r</entry><entry value="19">s</entry>
+            <entry value="20">t</entry><entry value="21">u</entry><entry value="22">v</entry><entry value="23">w</entry>
+            <entry value="24">x</entry><entry value="25">y</entry><entry value="26">z</entry><entry value="27">0</entry>
+            <entry value="28">1</entry><entry value="29">2</entry><entry value="30">3</entry><entry value="31">4</entry>
+            <entry value="32">5</entry><entry value="33">A</entry><entry value="34">B</entry><entry value="35">C</entry>
+            <entry value="36">D</entry><entry value="37">E</entry><entry value="38">F</entry><entry value="39">G</entry>
+            <entry value="40">H</entry><entry value="41">I</entry><entry value="42">J</entry><entry value="43">K</entry>
+            <entry value="44">L</entry><entry value="45">M</entry><entry value="46">N</entry><entry value="47">O</entry>
+            <entry value="48">P</entry><entry value="49">Q</entry><entry value="50">R</entry><entry value="51">S</entry>
+            <entry value="52">T</entry><entry value="53">U</entry><entry value="54">V</entry><entry value="55">W</entry>
+            <entry value="56">X</entry><entry value="57">Y</entry><entry value="58">Z</entry><entry value="59">6</entry>
+            <entry value="60">7</entry><entry value="61">8</entry><entry value="62">9</entry><entry value="63">_</entry>
+        </list>
+        <list bit="55-60" title="Char 10">
+            <entry value="0">NULL</entry><entry value="1">a</entry><entry value="2">b</entry><entry value="3">c</entry>
+            <entry value="4">d</entry><entry value="5">e</entry><entry value="6">f</entry><entry value="7">g</entry>
+            <entry value="8">h</entry><entry value="9">i</entry><entry value="10">j</entry><entry value="11">k</entry>
+            <entry value="12">l</entry><entry value="13">m</entry><entry value="14">n</entry><entry value="15">o</entry>
+            <entry value="16">p</entry><entry value="17">q</entry><entry value="18">r</entry><entry value="19">s</entry>
+            <entry value="20">t</entry><entry value="21">u</entry><entry value="22">v</entry><entry value="23">w</entry>
+            <entry value="24">x</entry><entry value="25">y</entry><entry value="26">z</entry><entry value="27">0</entry>
+            <entry value="28">1</entry><entry value="29">2</entry><entry value="30">3</entry><entry value="31">4</entry>
+            <entry value="32">5</entry><entry value="33">A</entry><entry value="34">B</entry><entry value="35">C</entry>
+            <entry value="36">D</entry><entry value="37">E</entry><entry value="38">F</entry><entry value="39">G</entry>
+            <entry value="40">H</entry><entry value="41">I</entry><entry value="42">J</entry><entry value="43">K</entry>
+            <entry value="44">L</entry><entry value="45">M</entry><entry value="46">N</entry><entry value="47">O</entry>
+            <entry value="48">P</entry><entry value="49">Q</entry><entry value="50">R</entry><entry value="51">S</entry>
+            <entry value="52">T</entry><entry value="53">U</entry><entry value="54">V</entry><entry value="55">W</entry>
+            <entry value="56">X</entry><entry value="57">Y</entry><entry value="58">Z</entry><entry value="59">6</entry>
+            <entry value="60">7</entry><entry value="61">8</entry><entry value="62">9</entry><entry value="63">_</entry>
+        </list>
+        <list bit="61-66" title="Char 11">
+            <entry value="0">NULL</entry><entry value="1">a</entry><entry value="2">b</entry><entry value="3">c</entry>
+            <entry value="4">d</entry><entry value="5">e</entry><entry value="6">f</entry><entry value="7">g</entry>
+            <entry value="8">h</entry><entry value="9">i</entry><entry value="10">j</entry><entry value="11">k</entry>
+            <entry value="12">l</entry><entry value="13">m</entry><entry value="14">n</entry><entry value="15">o</entry>
+            <entry value="16">p</entry><entry value="17">q</entry><entry value="18">r</entry><entry value="19">s</entry>
+            <entry value="20">t</entry><entry value="21">u</entry><entry value="22">v</entry><entry value="23">w</entry>
+            <entry value="24">x</entry><entry value="25">y</entry><entry value="26">z</entry><entry value="27">0</entry>
+            <entry value="28">1</entry><entry value="29">2</entry><entry value="30">3</entry><entry value="31">4</entry>
+            <entry value="32">5</entry><entry value="33">A</entry><entry value="34">B</entry><entry value="35">C</entry>
+            <entry value="36">D</entry><entry value="37">E</entry><entry value="38">F</entry><entry value="39">G</entry>
+            <entry value="40">H</entry><entry value="41">I</entry><entry value="42">J</entry><entry value="43">K</entry>
+            <entry value="44">L</entry><entry value="45">M</entry><entry value="46">N</entry><entry value="47">O</entry>
+            <entry value="48">P</entry><entry value="49">Q</entry><entry value="50">R</entry><entry value="51">S</entry>
+            <entry value="52">T</entry><entry value="53">U</entry><entry value="54">V</entry><entry value="55">W</entry>
+            <entry value="56">X</entry><entry value="57">Y</entry><entry value="58">Z</entry><entry value="59">6</entry>
+            <entry value="60">7</entry><entry value="61">8</entry><entry value="62">9</entry><entry value="63">_</entry>
+        </list>
+        <list bit="67-72" title="Char 12">
+            <entry value="0">NULL</entry><entry value="1">a</entry><entry value="2">b</entry><entry value="3">c</entry>
+            <entry value="4">d</entry><entry value="5">e</entry><entry value="6">f</entry><entry value="7">g</entry>
+            <entry value="8">h</entry><entry value="9">i</entry><entry value="10">j</entry><entry value="11">k</entry>
+            <entry value="12">l</entry><entry value="13">m</entry><entry value="14">n</entry><entry value="15">o</entry>
+            <entry value="16">p</entry><entry value="17">q</entry><entry value="18">r</entry><entry value="19">s</entry>
+            <entry value="20">t</entry><entry value="21">u</entry><entry value="22">v</entry><entry value="23">w</entry>
+            <entry value="24">x</entry><entry value="25">y</entry><entry value="26">z</entry><entry value="27">0</entry>
+            <entry value="28">1</entry><entry value="29">2</entry><entry value="30">3</entry><entry value="31">4</entry>
+            <entry value="32">5</entry><entry value="33">A</entry><entry value="34">B</entry><entry value="35">C</entry>
+            <entry value="36">D</entry><entry value="37">E</entry><entry value="38">F</entry><entry value="39">G</entry>
+            <entry value="40">H</entry><entry value="41">I</entry><entry value="42">J</entry><entry value="43">K</entry>
+            <entry value="44">L</entry><entry value="45">M</entry><entry value="46">N</entry><entry value="47">O</entry>
+            <entry value="48">P</entry><entry value="49">Q</entry><entry value="50">R</entry><entry value="51">S</entry>
+            <entry value="52">T</entry><entry value="53">U</entry><entry value="54">V</entry><entry value="55">W</entry>
+            <entry value="56">X</entry><entry value="57">Y</entry><entry value="58">Z</entry><entry value="59">6</entry>
+            <entry value="60">7</entry><entry value="61">8</entry><entry value="62">9</entry><entry value="63">_</entry>
+        </list>
+        <list bit="73-78" title="Char 13">
+            <entry value="0">NULL</entry><entry value="1">a</entry><entry value="2">b</entry><entry value="3">c</entry>
+            <entry value="4">d</entry><entry value="5">e</entry><entry value="6">f</entry><entry value="7">g</entry>
+            <entry value="8">h</entry><entry value="9">i</entry><entry value="10">j</entry><entry value="11">k</entry>
+            <entry value="12">l</entry><entry value="13">m</entry><entry value="14">n</entry><entry value="15">o</entry>
+            <entry value="16">p</entry><entry value="17">q</entry><entry value="18">r</entry><entry value="19">s</entry>
+            <entry value="20">t</entry><entry value="21">u</entry><entry value="22">v</entry><entry value="23">w</entry>
+            <entry value="24">x</entry><entry value="25">y</entry><entry value="26">z</entry><entry value="27">0</entry>
+            <entry value="28">1</entry><entry value="29">2</entry><entry value="30">3</entry><entry value="31">4</entry>
+            <entry value="32">5</entry><entry value="33">A</entry><entry value="34">B</entry><entry value="35">C</entry>
+            <entry value="36">D</entry><entry value="37">E</entry><entry value="38">F</entry><entry value="39">G</entry>
+            <entry value="40">H</entry><entry value="41">I</entry><entry value="42">J</entry><entry value="43">K</entry>
+            <entry value="44">L</entry><entry value="45">M</entry><entry value="46">N</entry><entry value="47">O</entry>
+            <entry value="48">P</entry><entry value="49">Q</entry><entry value="50">R</entry><entry value="51">S</entry>
+            <entry value="52">T</entry><entry value="53">U</entry><entry value="54">V</entry><entry value="55">W</entry>
+            <entry value="56">X</entry><entry value="57">Y</entry><entry value="58">Z</entry><entry value="59">6</entry>
+            <entry value="60">7</entry><entry value="61">8</entry><entry value="62">9</entry><entry value="63">_</entry>
+        </list>
+        <list bit="79-84" title="Char 14">
+            <entry value="0">NULL</entry><entry value="1">a</entry><entry value="2">b</entry><entry value="3">c</entry>
+            <entry value="4">d</entry><entry value="5">e</entry><entry value="6">f</entry><entry value="7">g</entry>
+            <entry value="8">h</entry><entry value="9">i</entry><entry value="10">j</entry><entry value="11">k</entry>
+            <entry value="12">l</entry><entry value="13">m</entry><entry value="14">n</entry><entry value="15">o</entry>
+            <entry value="16">p</entry><entry value="17">q</entry><entry value="18">r</entry><entry value="19">s</entry>
+            <entry value="20">t</entry><entry value="21">u</entry><entry value="22">v</entry><entry value="23">w</entry>
+            <entry value="24">x</entry><entry value="25">y</entry><entry value="26">z</entry><entry value="27">0</entry>
+            <entry value="28">1</entry><entry value="29">2</entry><entry value="30">3</entry><entry value="31">4</entry>
+            <entry value="32">5</entry><entry value="33">A</entry><entry value="34">B</entry><entry value="35">C</entry>
+            <entry value="36">D</entry><entry value="37">E</entry><entry value="38">F</entry><entry value="39">G</entry>
+            <entry value="40">H</entry><entry value="41">I</entry><entry value="42">J</entry><entry value="43">K</entry>
+            <entry value="44">L</entry><entry value="45">M</entry><entry value="46">N</entry><entry value="47">O</entry>
+            <entry value="48">P</entry><entry value="49">Q</entry><entry value="50">R</entry><entry value="51">S</entry>
+            <entry value="52">T</entry><entry value="53">U</entry><entry value="54">V</entry><entry value="55">W</entry>
+            <entry value="56">X</entry><entry value="57">Y</entry><entry value="58">Z</entry><entry value="59">6</entry>
+            <entry value="60">7</entry><entry value="61">8</entry><entry value="62">9</entry><entry value="63">_</entry>
+        </list>
+        <list bit="85-90" title="Char 15">
+            <entry value="0">NULL</entry><entry value="1">a</entry><entry value="2">b</entry><entry value="3">c</entry>
+            <entry value="4">d</entry><entry value="5">e</entry><entry value="6">f</entry><entry value="7">g</entry>
+            <entry value="8">h</entry><entry value="9">i</entry><entry value="10">j</entry><entry value="11">k</entry>
+            <entry value="12">l</entry><entry value="13">m</entry><entry value="14">n</entry><entry value="15">o</entry>
+            <entry value="16">p</entry><entry value="17">q</entry><entry value="18">r</entry><entry value="19">s</entry>
+            <entry value="20">t</entry><entry value="21">u</entry><entry value="22">v</entry><entry value="23">w</entry>
+            <entry value="24">x</entry><entry value="25">y</entry><entry value="26">z</entry><entry value="27">0</entry>
+            <entry value="28">1</entry><entry value="29">2</entry><entry value="30">3</entry><entry value="31">4</entry>
+            <entry value="32">5</entry><entry value="33">A</entry><entry value="34">B</entry><entry value="35">C</entry>
+            <entry value="36">D</entry><entry value="37">E</entry><entry value="38">F</entry><entry value="39">G</entry>
+            <entry value="40">H</entry><entry value="41">I</entry><entry value="42">J</entry><entry value="43">K</entry>
+            <entry value="44">L</entry><entry value="45">M</entry><entry value="46">N</entry><entry value="47">O</entry>
+            <entry value="48">P</entry><entry value="49">Q</entry><entry value="50">R</entry><entry value="51">S</entry>
+            <entry value="52">T</entry><entry value="53">U</entry><entry value="54">V</entry><entry value="55">W</entry>
+            <entry value="56">X</entry><entry value="57">Y</entry><entry value="58">Z</entry><entry value="59">6</entry>
+            <entry value="60">7</entry><entry value="61">8</entry><entry value="62">9</entry><entry value="63">_</entry>
+        </list>
+        <list bit="91-96" title="Char 16">
+            <entry value="0">NULL</entry><entry value="1">a</entry><entry value="2">b</entry><entry value="3">c</entry>
+            <entry value="4">d</entry><entry value="5">e</entry><entry value="6">f</entry><entry value="7">g</entry>
+            <entry value="8">h</entry><entry value="9">i</entry><entry value="10">j</entry><entry value="11">k</entry>
+            <entry value="12">l</entry><entry value="13">m</entry><entry value="14">n</entry><entry value="15">o</entry>
+            <entry value="16">p</entry><entry value="17">q</entry><entry value="18">r</entry><entry value="19">s</entry>
+            <entry value="20">t</entry><entry value="21">u</entry><entry value="22">v</entry><entry value="23">w</entry>
+            <entry value="24">x</entry><entry value="25">y</entry><entry value="26">z</entry><entry value="27">0</entry>
+            <entry value="28">1</entry><entry value="29">2</entry><entry value="30">3</entry><entry value="31">4</entry>
+            <entry value="32">5</entry><entry value="33">A</entry><entry value="34">B</entry><entry value="35">C</entry>
+            <entry value="36">D</entry><entry value="37">E</entry><entry value="38">F</entry><entry value="39">G</entry>
+            <entry value="40">H</entry><entry value="41">I</entry><entry value="42">J</entry><entry value="43">K</entry>
+            <entry value="44">L</entry><entry value="45">M</entry><entry value="46">N</entry><entry value="47">O</entry>
+            <entry value="48">P</entry><entry value="49">Q</entry><entry value="50">R</entry><entry value="51">S</entry>
+            <entry value="52">T</entry><entry value="53">U</entry><entry value="54">V</entry><entry value="55">W</entry>
+            <entry value="56">X</entry><entry value="57">Y</entry><entry value="58">Z</entry><entry value="59">6</entry>
+            <entry value="60">7</entry><entry value="61">8</entry><entry value="62">9</entry><entry value="63">_</entry>
+        </list>
+    </sprite>
 </sprites>
