@@ -69,6 +69,9 @@
     <sprite id="738" name="Rainbow Light" notes="A configurable colorful light source"></sprite>
     <sprite id="739" name="Wave Platform" notes="Platform for water waves"></sprite>
     <sprite id="740" name="Debug Actor" notes="Actor useful for debugging various things"></sprite>
+    <sprite id="741" name="Liquid Overlay"></sprite>
+    <sprite id="742" name="Physics Modifier"></sprite>
+    <sprite id="743" name="Kamiya"></sprite>
     <sprite id="744" name="Model Loader" notes="Loads any model.">
         <value nybble="5-6" title="Model Filename String Bank ID"/>
         <value nybble="7-8" title="Model Name String Bank ID"/>
@@ -363,4 +366,8 @@
             <entry value="60">7</entry><entry value="61">8</entry><entry value="62">9</entry><entry value="63">_</entry>
         </list>
     </sprite>
+    <sprite id="746" name="Military Cheep"></sprite>
+    <sprite id="747" name="Universal Boss Controller"></sprite>
+    <sprite id="748" name="Giant Skewer"></sprite>
+    <sprite id="749" name="Scuttlebug"></sprite>
 </sprites>
