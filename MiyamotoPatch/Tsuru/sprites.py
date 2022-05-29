@@ -82,7 +82,7 @@ class SpriteImage_RainbowLight(SLib.SpriteImage_Static):  # 738
             parent,
             3.75,
             ImageCache['RainbowLight'],
-            (-10, -19),
+            (0, 0),
         )
 
     def loadImages():

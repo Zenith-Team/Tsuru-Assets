@@ -66,7 +66,18 @@
     <sprite id="735" name="Effect Spawner" notes="Spawns sound and particle effects"></sprite>
     <sprite id="736" name="Angry Sun"></sprite>
     <sprite id="737" name="Angry Moon"></sprite>
-    <sprite id="738" name="Rainbow Light" notes="A configurable colorful light source"></sprite>
+    <sprite id="738" name="Rainbow Light" notes="A configurable colorful light source">
+        <list nybble="1" title="Color">
+            <entry value="0">Red</entry>
+            <entry value="1">Orange</entry>
+            <entry value="2">Yellow</entry>
+            <entry value="3">Green</entry>
+            <entry value="4">Cyan</entry>
+            <entry value="5">Blue</entry>
+            <entry value="6">White</entry>
+        </list>
+        <value nybble="1" title="Intensity"/>
+    </sprite>
     <sprite id="739" name="Wave Platform" notes="Platform for water waves"></sprite>
     <sprite id="740" name="Debug Actor" notes="Actor useful for debugging various things"></sprite>
     <sprite id="741" name="Liquid Overlay"></sprite>
