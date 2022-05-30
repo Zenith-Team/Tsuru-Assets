@@ -76,7 +76,7 @@
             <entry value="5">Blue</entry>
             <entry value="6">White</entry>
         </list>
-        <value nybble="1" title="Intensity"/>
+        <value nybble="2" title="Intensity"/>
     </sprite>
     <sprite id="739" name="Wave Platform" notes="Platform for water waves"></sprite>
     <sprite id="740" name="Debug Actor" notes="Actor useful for debugging various things"></sprite>
@@ -381,4 +381,8 @@
     <sprite id="747" name="Universal Boss Controller"></sprite>
     <sprite id="748" name="Giant Skewer"></sprite>
     <sprite id="749" name="Scuttlebug"></sprite>
+    <sprite id="750" name="Angry Grrrol">
+            <value nybble="1" title="Speed"/>
+            <value nybble="2" title="Size"/>
+    </sprite>
 </sprites>
