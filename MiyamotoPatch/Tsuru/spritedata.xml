@@ -80,7 +80,15 @@
     </sprite>
     <sprite id="739" name="Wave Platform" notes="Platform for water waves"></sprite>
     <sprite id="740" name="Debug Actor" notes="Actor useful for debugging various things"></sprite>
-    <sprite id="741" name="Liquid Overlay"></sprite>
+    <sprite id="741" name="Liquid Overlay">
+        <value nybble="5" title="Location ID"/>
+        <list nybble="6" title="Collision Type">
+            <entry value="0">Cold</entry>
+            <entry value="1">Electric</entry>
+            <entry value="2">Toxic</entry>
+            <entry value="3">Hot</entry>
+        </list>
+    </sprite>
     <sprite id="742" name="Physics Modifier"></sprite>
     <sprite id="743" name="Kamiya"></sprite>
     <sprite id="744" name="Model Loader" notes="Loads any model.">
