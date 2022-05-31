@@ -390,7 +390,12 @@
     <sprite id="748" name="Giant Skewer"></sprite>
     <sprite id="749" name="Scuttlebug"></sprite>
     <sprite id="750" name="Angry Grrrol">
-            <value nybble="1" title="Speed"/>
-            <value nybble="2" title="Size"/>
+        <value nybble="1" title="Speed"/>
+        <value nybble="2" title="Size"/>
+    </sprite>
+    <sprite id="751" name="Poison Mushroom">
+        <list nybble="6" title="Spawn Type">
+            <entry value="6">Reward</entry>
+        </list>
     </sprite>
 </sprites>
