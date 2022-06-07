@@ -480,4 +480,5 @@
 		</list>
 		<value nybble="21-22" title="Movement ID"/>
 	</sprite>
+    <sprite id="753" name="Cold Fuzzy"></sprite>
 </sprites>
