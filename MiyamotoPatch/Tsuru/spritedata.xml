@@ -481,4 +481,31 @@
 		<value nybble="21-22" title="Movement ID"/>
 	</sprite>
     <sprite id="753" name="Cold Fuzzy"></sprite>
+    <sprite id="754" name="Wavy Water">
+        <value nybble="1" title="Ripple Speed"/>
+        <value nybble="2" title="Horizontal Speed"/>
+        <value nybble="3" title="Wave Frequency"/>
+        <value nybble="4" title="Baseline Height Offset"/>
+        <value nybble="5" title="Ripple Height"/>
+        <value nybble="6" title="Ripple Count"/>
+        <value nybble="7" title="Unknown Value"/>
+    </sprite>
+    <sprite id="755" name="Wavy Poison">
+        <value nybble="1" title="Ripple Speed"/>
+        <value nybble="2" title="Horizontal Speed"/>
+        <value nybble="3" title="Wave Frequency"/>
+        <value nybble="4" title="Baseline Height Offset"/>
+        <value nybble="5" title="Ripple Height"/>
+        <value nybble="6" title="Ripple Count"/>
+        <value nybble="7" title="Unknown Value"/>
+    </sprite>
+    <sprite id="756" name="Wavy Quicksand">
+        <value nybble="1" title="Ripple Speed"/>
+        <value nybble="2" title="Horizontal Speed"/>
+        <value nybble="3" title="Wave Frequency"/>
+        <value nybble="4" title="Baseline Height Offset"/>
+        <value nybble="5" title="Ripple Height"/>
+        <value nybble="6" title="Ripple Count"/>
+        <value nybble="7" title="Unknown Value"/>
+    </sprite>
 </sprites>
