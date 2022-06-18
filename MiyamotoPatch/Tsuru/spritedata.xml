@@ -508,4 +508,7 @@
         <value nybble="6" title="Ripple Count"/>
         <value nybble="7" title="Unknown Value"/>
     </sprite>
+    <sprite id="757" name="Layer Changer"></sprite>
+    <sprite id="758" name="Biddybud"></sprite>
+    <sprite id="759" name="Helical Bar"></sprite>
 </sprites>
