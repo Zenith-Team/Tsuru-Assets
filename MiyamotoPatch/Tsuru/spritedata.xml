@@ -546,4 +546,29 @@
             <entry value="2">Three</entry>
         </list>
     </sprite>
+    <sprite id="760" name="Basalt Bones"/>
+    <sprite id="761" name="Splunkin">
+        <checkbox nybble="5" title="Already Damaged"/>
+    </sprite>
+    <sprite id="762" name="Switch Block">
+        <checkbox nybble="5" title="Starts Blue"/>
+        <checkbox nybble="6" title="Used Once"/>
+        <value nybble="7-8" title="Red Event"/>
+        <value nybble="9-10" title="Blue Event"/>
+        <value nybble="11" title="Delay" comment="There's a delay between switches. This value is in seconds. Value 0 is equal to value 3."/>
+        <list nybble="20" title="Movement Type">
+			<entry value="0">None</entry>
+			<entry value="1">Sway Or Spin (68, 69, 116, 118)</entry>
+			<entry value="2">Bolt (238)</entry>
+			<entry value="3">Path (100)</entry>
+			<entry value="4">Two-Way (70)</entry>
+			<entry value="6">BoltMushroom (241)</entry>
+			<entry value="7">No-bolt Mushroom (242)</entry>
+			<entry value="8">Shifting Platform (132)</entry>
+			<entry value="9">Spinning (214, 484)</entry>
+			<entry value="10">Rolling Hill (265)</entry>
+			<entry value="11">Moving Mushroom Lift (210)</entry>
+		</list>
+        <value nybble="21-22" title="Movement ID"/>
+    </sprite>
 </sprites>
