@@ -115,6 +115,19 @@ class SpriteImage_Scuttlebug(SLib.SpriteImage_Static):  # 749
     def loadImages():
         SLib.loadIfNotInImageCache('scuttlebug', 'scuttlebug.png')
 
+        
+class SpriteImage_Biddybud(SLib.SpriteImage_Static):  # 758
+    def __init__(self, parent):
+        super().__init__(
+            parent,
+            3.75,
+            ImageCache['Biddybud'],
+            (-8, 0),
+        )
+
+    def loadImages():
+        SLib.loadIfNotInImageCache('Biddybud', 'biddybud_red.png')
+
 
 ImageClasses = {
     724: SpriteImage_ActorSpawner,
@@ -124,4 +137,5 @@ ImageClasses = {
     738: SpriteImage_RainbowLight,
     726: SpriteImage_CustomDoor,
     749: SpriteImage_Scuttlebug,
+    758: SpriteImage_Biddybud,
 }
