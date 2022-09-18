@@ -513,7 +513,29 @@
         <value nybble="7" title="Unknown Value"/>
     </sprite>
     <sprite id="757" name="Layer Changer"></sprite>
-    <sprite id="758" name="Biddybud"></sprite>
+     <sprite id="758" name="Biddybud">
+        <list nybble="5" title="Color">
+            <entry value="0">Red</entry>
+            <entry value="1">Yellow</entry>
+            <entry value="2">Green</entry>
+            <entry value="3">Blue</entry>
+            <entry value="4">Pink</entry>
+        </list>
+        <list nybble="20" title="Movement Type">
+			<entry value="0">None</entry>
+			<entry value="1">Sway Or Spin (68, 69, 116, 118)</entry>
+			<entry value="2">Bolt (238)</entry>
+			<entry value="3">Path (100)</entry>
+			<entry value="4">Two-Way (70)</entry>
+			<entry value="6">BoltMushroom (241)</entry>
+			<entry value="7">No-bolt Mushroom (242)</entry>
+			<entry value="8">Shifting Platform (132)</entry>
+			<entry value="9">Spinning (214, 484)</entry>
+			<entry value="10">Rolling Hill (265)</entry>
+			<entry value="11">Moving Mushroom Lift (210)</entry>
+		</list>
+        <value nybble="21-22" title="Movement ID"/>
+    </sprite>
     <sprite id="759" name="Helical Bar">
         <value nybble="1" title="Bars"/>
         <value nybble="2" title="Fireballs per Bar"/>
