@@ -386,7 +386,10 @@
             <entry value="60">7</entry><entry value="61">8</entry><entry value="62">9</entry><entry value="63">_</entry>
         </list>
     </sprite>
-    <sprite id="746" name="Switch Block Event Activator"></sprite>
+    <sprite id="746" name="Switch Block Event Activator" comment="This sprite is used in combination with the Switch Block (763). It activates the event.">
+        <!-- <value nybble="1-2" title="Event 1"/>
+        <value nybble="3" title="Event 2"/> -->
+    </sprite>
     <sprite id="747" name="Universal Boss Controller"></sprite>
     <sprite id="748" name="Giant Skewer"></sprite>
     <sprite id="749" name="Scuttlebug"></sprite>
@@ -526,6 +529,6 @@
             <entry value="2">Third Star Coin</entry>
         </list>
     </sprite>
-    <sprite id="763" name="Switch Block"/>
+    <sprite id="763" name="Switch Block" comment="This sprite is used in combination with the Switch Block Event Activator (746)."/>
     <sprite id="764" name="Powerup Switcher"/>
 </sprites>
