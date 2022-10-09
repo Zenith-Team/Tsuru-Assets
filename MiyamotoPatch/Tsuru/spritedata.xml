@@ -65,8 +65,8 @@
             <entry value="1">Blue</entry>
         </list>
     </sprite>
-    <sprite id="736" name="Angry Sun"></sprite>
-    <sprite id="737" name="Angry Moon"></sprite>
+    <sprite id="736" name="Jumbo Ray"></sprite>
+    <sprite id="737" name="">RESERVED ID</sprite>
     <sprite id="738" name="Rainbow Light" notes="A configurable colorful light source">
         <list nybble="1" title="Color">
             <entry value="0">Red</entry>
@@ -553,5 +553,4 @@
     </sprite>
     <sprite id="763" name="Switch Block" comment="This sprite is used in combination with the Switch Block Event Activator (746)."/>
     <sprite id="764" name="Powerup Switcher"/>
-    <sprite id="765" name="Manta Ray"/>
 </sprites>
