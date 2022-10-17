@@ -386,7 +386,7 @@
             <entry value="60">7</entry><entry value="61">8</entry><entry value="62">9</entry><entry value="63">_</entry>
         </list>
     </sprite>
-    <sprite id="746" name="Switch Block Event Activator" comment="This sprite is used in combination with the Switch Block (763). It activates the event.">
+    <sprite id="746" name="Switch Block Event Activator" comment="This sprite is used in combination with the Switch Block (763)">
         <!-- <value nybble="1-2" title="Event 1"/>
         <value nybble="3" title="Event 2"/> -->
     </sprite>
@@ -541,7 +541,7 @@
         <value nybble="2" title="Fireballs per Bar"/>
     </sprite>
     <sprite id="760" name="Basalt Bones"></sprite>
-    <sprite id="761" name="Splunkin"></sprite>
+    <sprite id="761" name="Flaptor"></sprite>
     <sprite id="762" name="Star Coin Shard Manager">
         <value nybble="1" title="ID"/>
         <value nybble="2" title="Required shards"/>
