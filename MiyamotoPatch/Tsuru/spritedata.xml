@@ -79,7 +79,6 @@
         </list>
         <value nybble="2" title="Intensity"/>
     </sprite>
-    <sprite id="739" name="Wave Platform" notes="Platform for water waves"></sprite>
     <sprite id="740" name="Debug Actor" notes="Actor useful for debugging various things"></sprite>
     <sprite id="741" name="Liquid Overlay">
         <value nybble="5" title="Location ID"/>
@@ -395,7 +394,6 @@
     <sprite id="749" name="Scuttlebug"></sprite>
     <sprite id="750" name="Angry Grrrol">
         <value nybble="1" title="Speed"/>
-        <value nybble="2" title="Size"/>
     </sprite>
     <sprite id="751" name="Poison Mushroom">
         <list nybble="6" title="Spawn Type">
@@ -537,11 +535,23 @@
         <value nybble="21-22" title="Movement ID"/>
     </sprite>
     <sprite id="759" name="Helical Bar">
-        <value nybble="1" title="Bars"/>
-        <value nybble="2" title="Fireballs per Bar"/>
+        <list nybble="1" title="Number of bars">
+            <entry value="0">1</entry>
+            <entry value="1">2</entry>
+            <entry value="2">3</entry>
+        </list>
+        <checkbox nybble="2" title="Animate"/>
+        <value nybble="4" title="Helix multiplier"/>
     </sprite>
     <sprite id="760" name="Basalt Bones"></sprite>
-    <sprite id="761" name="Flaptor"></sprite>
+    <sprite id="761" name="Flaptor">
+        <value nybble="1" title="Move distance"/>
+        <list nybble="2" title="Movement type">
+            <entry value="0">Static</entry>
+            <entry value="1">Horizontal</entry>
+            <entry value="2">Vertical</entry>
+        </list>
+    </sprite>
     <sprite id="762" name="Star Coin Shard Manager">
         <value nybble="1" title="ID"/>
         <value nybble="2" title="Required shards"/>
