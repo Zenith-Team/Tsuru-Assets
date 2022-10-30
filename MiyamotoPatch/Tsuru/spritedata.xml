@@ -51,7 +51,12 @@
     <sprite id="729" name="Star Coin Shard">
         <value nybble="1" title="Manager ID"/>
     </sprite>
-    <sprite id="730" name="Beep Block"></sprite>
+    <sprite id="730" name="Beep Block">
+        <list nybble="1" title="Color">
+            <entry value="0">Red</entry>
+            <entry value="1">Blue</entry>
+        </list>
+    </sprite>
     <sprite id="731" name="Falling Chestnut"></sprite>
     <sprite id="732" name="Task Changer" notes="! Unfinished"></sprite>
     <sprite id="733" name="Cataquack" notes="! Unfinished + Requires model"></sprite>
@@ -390,8 +395,12 @@
         <value nybble="3" title="Event 2"/> -->
     </sprite>
     <sprite id="747" name="Universal Boss Controller"></sprite>
-    <sprite id="748" name="Giant Skewer"></sprite>
-    <sprite id="749" name="Scuttlebug"></sprite>
+    <sprite id="748" name="Giant Skewer">
+        <value nybble="5" title="Extend Distance"/>
+    </sprite>
+    <sprite id="749" name="Scuttlebug">
+        <value nybble="1" title="Drop Distance"/>
+    </sprite>
     <sprite id="750" name="Angry Grrrol">
         <value nybble="1" title="Speed"/>
     </sprite>
