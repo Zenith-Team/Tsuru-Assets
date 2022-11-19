@@ -69,8 +69,8 @@
     </sprite>
     <sprite id="735" name="Red/Blue Block" notes="Block which is active during a specific switch block color">
         <list nybble="1" title="Color">
-            <entry value="0">Red</entry>
-            <entry value="1">Blue</entry>
+            <entry value="0">Blue</entry>
+            <entry value="1">Red</entry>
         </list>
     </sprite>
     <sprite id="736" name="Jumbo Ray (Unfinished)"></sprite>
