@@ -1,8 +1,6 @@
 <?xml version="1.0"?>
 <!-- Miyamoto Spritedata Patch for Tsuru -->
 
-
-
 <sprites>
     <sprite id="724" name="Actor Spawner">
         <value nybble="1-2" title="Triggering Event ID"/>
