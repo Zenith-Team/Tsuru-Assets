@@ -1,4 +1,5 @@
 <?xml version="1.0"?>
 <game name="Tsuru" version="1.0" description="A platform for NSMBU custom code hacks.">
     <file name="spritedata" path="spritedata.xml" />
+    <file name="spritecategories" path="category.xml" />
 </game>
