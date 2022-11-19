@@ -128,6 +128,30 @@ class SpriteImage_Biddybud(SLib.SpriteImage_Static):  # 758
     def loadImages():
         SLib.loadIfNotInImageCache('Biddybud', 'biddybud_red.png')
 
+class SpriteImage_StarCoinShardManager(SLib.SpriteImage_Static):  # 762
+    def __init__(self, parent):
+        super().__init__(
+            parent,
+            3.75,
+            ImageCache['StarShardMan'],
+            (0, 0),
+        )
+
+    def loadImages():
+        SLib.loadIfNotInImageCache('StarShardMan', 'star_shard_man.png')
+
+class SpriteImage_StarCoinShard(SLib.SpriteImage_Static):  # 729
+    def __init__(self, parent):
+        super().__init__(
+            parent,
+            3.75,
+            ImageCache['starshard'],
+            (-8, -8),
+        )
+
+    def loadImages():
+        SLib.loadIfNotInImageCache('starshard', 'star_shard.png')
+
 
 ImageClasses = {
     724: SpriteImage_ActorSpawner,
@@ -138,4 +162,6 @@ ImageClasses = {
     726: SpriteImage_CustomDoor,
     749: SpriteImage_Scuttlebug,
     758: SpriteImage_Biddybud,
+    762: SpriteImage_StarCoinShardManager,
+    729: SpriteImage_StarCoinShard,
 }
