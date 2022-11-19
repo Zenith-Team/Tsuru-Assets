@@ -17,19 +17,19 @@ jobs:
 
       - uses: thedoctor0/zip-release@main
         with:
-          path: game/
+          path: game/content
           filename: game_assets.zip
 
       - uses: thedoctor0/zip-release@main
         with:
-          path: MiyamotoPatch/
+          path: MiyamotoPatch/Tsuru
           filename: miyamoto_patch.zip
 
       - uses: maggie0002/actions/packages/automatic-releases@built-packages
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           automatic_release_tag: "latest"
-          prerelease: true
+          prerelease: false
           title: "Latest Assets"
           files: |
             game_assets.zip
