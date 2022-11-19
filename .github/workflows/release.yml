@@ -17,12 +17,12 @@ jobs:
 
       - uses: thedoctor0/zip-release@main
         with:
-          path: game/content/
+          directory: game/
           filename: game_assets.zip
 
       - uses: thedoctor0/zip-release@main
         with:
-          path: MiyamotoPatch/Tsuru/
+          directory: MiyamotoPatch/
           filename: miyamoto_patch.zip
 
       - uses: maggie0002/actions/packages/automatic-releases@built-packages
