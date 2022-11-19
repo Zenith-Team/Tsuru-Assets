@@ -13,19 +13,19 @@ jobs:
     runs-on: "ubuntu-latest"
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
-      - uses: papeloto/action-zip@v1
+      - uses: thedoctor0/zip-release@main
         with:
-          files: game/
-          dest: game_assets.zip
+          path: game/
+          filename: game_assets.zip
 
-      - uses: papeloto/action-zip@v1
+      - uses: thedoctor0/zip-release@main
         with:
-          files: MiyamotoPatch/
-          dest: miyamoto_patch.zip
+          path: MiyamotoPatch/
+          filename: miyamoto_patch.zip
 
-      - uses: marvinpinto/action-automatic-releases@latest
+      - uses: maggie0002/actions/packages/automatic-releases@built-packages
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           automatic_release_tag: "latest"
