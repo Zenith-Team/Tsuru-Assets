@@ -18,12 +18,12 @@ jobs:
       - uses: thedoctor0/zip-release@main
         with:
           directory: game/
-          filename: game_assets.zip
+          filename: ../game_assets.zip
 
       - uses: thedoctor0/zip-release@main
         with:
           directory: MiyamotoPatch/
-          filename: miyamoto_patch.zip
+          filename: ../miyamoto_patch.zip
 
       - uses: maggie0002/actions/packages/automatic-releases@built-packages
         with:
