@@ -1,22 +1,29 @@
 ---
-name: "package-game-files"
+name: "package-files"
 
 on:
   push:
     paths:
       - "game/**"
+      - "MiyamotoPatch/Tsuru/**"
 
 jobs:
   auto-release:
-    name: "Game Files Release"
+    name: "Automatic Release"
     runs-on: "ubuntu-latest"
 
     steps:
       - uses: actions/checkout@v2
+
       - uses: papeloto/action-zip@v1
         with:
           files: game/
-          dest: assets.zip
+          dest: game_assets.zip
+
+      - uses: papeloto/action-zip@v1
+        with:
+          files: MiyamotoPatch/
+          dest: miyamoto_patch.zip
 
       - uses: marvinpinto/action-automatic-releases@latest
         with:
@@ -25,4 +32,5 @@ jobs:
           prerelease: true
           title: "Latest Assets"
           files: |
-            assets.zip
+            game_assets.zip
+            miyamoto_patch.zip
