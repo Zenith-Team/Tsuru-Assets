@@ -2,6 +2,9 @@
 <!-- Miyamoto Spritedata Patch for Tsuru -->
 
 <sprites>
+    <sprite id="229" name="Foo">
+		<checkbox nybble="12" title="Death Cloud" comment="Foo will blow out a death cloud instead of its normal cloud."/>
+    </sprite>
     <sprite id="724" name="Actor Spawner">
         <value nybble="1-2" title="Triggering Event ID"/>
         <list nybble="21" title="ID Type">
