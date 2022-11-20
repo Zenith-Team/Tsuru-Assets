@@ -2,6 +2,9 @@
 <!-- Miyamoto Spritedata Patch for Tsuru -->
 
 <sprites>
+    <sprite id="229" name="Foo">
+		<checkbox nybble="12" title="Death Cloud" comment="Foo will blow out a death cloud instead of its normal cloud."/>
+    </sprite>
     <sprite id="724" name="Actor Spawner">
         <value nybble="1-2" title="Triggering Event ID"/>
         <list nybble="21" title="ID Type">
@@ -48,7 +51,15 @@
     </sprite>
     <sprite id="728" name="P Acorn">
         <list nybble="6" title="Spawn Type">
-            <entry value="6">Red Coin Reward</entry>
+	    <entry value="0">Crash</entry>
+            <entry value="1">Normal</entry>
+            <entry value="2">Broken</entry>
+            <entry value="3">Jump Move</entry>
+            <entry value="4">Jump Random Move</entry>
+            <entry value="5">Fall Move</entry>
+            <entry value="6">Reward</entry>
+            <entry value="7">Normal</entry>
+            <entry value="8">Jump</entry>
         </list>
     </sprite>
     <sprite id="729" name="Star Coin Shard">
@@ -69,8 +80,8 @@
     </sprite>
     <sprite id="735" name="Red/Blue Block" notes="Block which is active during a specific switch block color">
         <list nybble="1" title="Color">
-            <entry value="0">Red</entry>
-            <entry value="1">Blue</entry>
+            <entry value="0">Blue</entry>
+            <entry value="1">Red</entry>
         </list>
     </sprite>
     <sprite id="736" name="Jumbo Ray (Unfinished)"></sprite>
@@ -414,7 +425,15 @@
     </sprite>
     <sprite id="751" name="Poison Mushroom">
         <list nybble="6" title="Spawn Type">
+	    <entry value="0">Crash</entry>
+            <entry value="1">Normal</entry>
+            <entry value="2">Broken</entry>
+            <entry value="3">Jump Move</entry>
+            <entry value="4">Jump Random Move</entry>
+            <entry value="5">Fall Move</entry>
             <entry value="6">Reward</entry>
+            <entry value="7">Normal</entry>
+            <entry value="8">Jump</entry>
         </list>
     </sprite>
     <sprite id="752" name="Magic Platform">
