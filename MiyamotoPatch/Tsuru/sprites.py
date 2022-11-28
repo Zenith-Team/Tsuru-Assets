@@ -103,6 +103,19 @@ class SpriteImage_CustomDoor(SLib.SpriteImage_Static):  # 726
         SLib.loadIfNotInImageCache('CustomDoor', 'customdoor.png')
 
 
+class SpriteImage_TimeClock(SLib.SpriteImage_Static):  # 734
+    def __init__(self, parent):
+        super().__init__(
+            parent,
+            3.75,
+            ImageCache['TimeClock'],
+            (-16, -16),
+        )
+
+    @staticmethod
+    def loadImages():
+        SLib.loadIfNotInImageCache('TimeClock', 'time_clock.png')
+
 class SpriteImage_Scuttlebug(SLib.SpriteImage_Static):  # 749
     def __init__(self, parent):
         super().__init__(
@@ -114,8 +127,7 @@ class SpriteImage_Scuttlebug(SLib.SpriteImage_Static):  # 749
 
     def loadImages():
         SLib.loadIfNotInImageCache('scuttlebug', 'scuttlebug.png')
-
-        
+    
 class SpriteImage_Biddybud(SLib.SpriteImage_Static):  # 758
     def __init__(self, parent):
         super().__init__(
@@ -128,7 +140,6 @@ class SpriteImage_Biddybud(SLib.SpriteImage_Static):  # 758
     def loadImages():
         SLib.loadIfNotInImageCache('Biddybud', 'biddybud_red.png')
 
-
 ImageClasses = {
     724: SpriteImage_ActorSpawner,
     748: SpriteImage_MassiveSpikedStake,
@@ -136,6 +147,7 @@ ImageClasses = {
     733: SpriteImage_Cataquack,
     738: SpriteImage_RainbowLight,
     726: SpriteImage_CustomDoor,
+    734: SpriteImage_TimeClock,
     749: SpriteImage_Scuttlebug,
     758: SpriteImage_Biddybud,
 }
