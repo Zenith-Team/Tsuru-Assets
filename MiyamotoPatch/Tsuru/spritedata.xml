@@ -2,9 +2,6 @@
 <!-- Miyamoto Spritedata Patch for Tsuru -->
 
 <sprites>
-    <sprite id="229" name="Foo">
-		<checkbox nybble="12" title="Death Cloud" comment="Foo will blow out a death cloud instead of its normal cloud."/>
-    </sprite>
     <sprite id="724" name="Actor Spawner">
         <value nybble="1-2" title="Triggering Event ID"/>
         <list nybble="21" title="ID Type">
@@ -51,15 +48,7 @@
     </sprite>
     <sprite id="728" name="P Acorn">
         <list nybble="6" title="Spawn Type">
-	    <entry value="0">Crash</entry>
-            <entry value="1">Normal</entry>
-            <entry value="2">Broken</entry>
-            <entry value="3">Jump Move</entry>
-            <entry value="4">Jump Random Move</entry>
-            <entry value="5">Fall Move</entry>
-            <entry value="6">Reward</entry>
-            <entry value="7">Normal</entry>
-            <entry value="8">Jump</entry>
+            <entry value="6">Red Coin Reward</entry>
         </list>
     </sprite>
     <sprite id="729" name="Star Coin Shard">
@@ -80,8 +69,8 @@
     </sprite>
     <sprite id="735" name="Red/Blue Block" notes="Block which is active during a specific switch block color">
         <list nybble="1" title="Color">
-            <entry value="0">Blue</entry>
-            <entry value="1">Red</entry>
+            <entry value="0">Red</entry>
+            <entry value="1">Blue</entry>
         </list>
     </sprite>
     <sprite id="736" name="Jumbo Ray (Unfinished)"></sprite>
@@ -412,8 +401,8 @@
         </list>
     </sprite>
     <sprite id="746" name="Switch Block Event Activator" comment="This sprite is used in combination with the Switch Block (763)">
-        <!-- <value nybble="1-2" title="Event 1"/>
-        <value nybble="3" title="Event 2"/> -->
+        <value nybble="1-2" title="Event 1"/>
+        <value nybble="3-4" title="Event 2"/>
     </sprite>
     <sprite id="747" name="Universal Boss Controller"></sprite>
     <sprite id="748" name="Giant Skewer">
@@ -425,15 +414,7 @@
     </sprite>
     <sprite id="751" name="Poison Mushroom">
         <list nybble="6" title="Spawn Type">
-	    <entry value="0">Crash</entry>
-            <entry value="1">Normal</entry>
-            <entry value="2">Broken</entry>
-            <entry value="3">Jump Move</entry>
-            <entry value="4">Jump Random Move</entry>
-            <entry value="5">Fall Move</entry>
             <entry value="6">Reward</entry>
-            <entry value="7">Normal</entry>
-            <entry value="8">Jump</entry>
         </list>
     </sprite>
     <sprite id="752" name="Magic Platform">
@@ -599,4 +580,24 @@
     </sprite>
     <sprite id="763" name="Switch Block" comment="This sprite is used in combination with the Switch Block Event Activator (746)."/>
     <sprite id="764" name="Powerup Switcher"/>
+    <sprite id="765" name="Minecart"/>
+    <sprite id="766" name="Triple Block">
+        <list nybble="1" title="Middle Contents">
+            <entry value="0">1-up Mushroom</entry>
+            <entry value="1">1 Coin</entry>
+            <entry value="2">3 Coins</entry>
+            <entry value="3">Mushroom</entry>
+            <entry value="4">Fire Flower</entry>
+            <entry value="5">Ice Flower</entry>
+            <entry value="6">Penguin</entry>
+            <entry value="7">Propeller</entry>
+            <entry value="8">Star</entry>
+            <entry value="9">Star</entry>
+            <entry value="10">Acorn</entry>
+            <entry value="11">3-up Moon</entry>
+            <entry value="12">Springboard</entry>
+            <entry value="13">Vine</entry>
+            <entry value="14">Yoshi Egg</entry>
+        </list>
+    </sprite>
 </sprites>
