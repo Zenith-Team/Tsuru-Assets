@@ -599,5 +599,11 @@
             <entry value="13">Vine</entry>
             <entry value="14">Yoshi Egg</entry>
         </list>
+	<list nybble="2" title="Animation">
+            <entry value="0">Standard</entry>
+            <entry value="1">Underground</entry>
+            <entry value="2">Lava</entry>
+            <entry value="3">Lava 2</entry>
+        </list>
     </sprite>
 </sprites>
