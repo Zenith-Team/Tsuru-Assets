@@ -599,11 +599,14 @@
             <entry value="13">Vine</entry>
             <entry value="14">Yoshi Egg</entry>
         </list>
-	<list nybble="2" title="Animation">
+	    <list nybble="2" title="Animation">
             <entry value="0">Standard</entry>
             <entry value="1">Underground</entry>
             <entry value="2">Lava</entry>
             <entry value="3">Lava 2</entry>
         </list>
+    </sprite>
+    <sprite id="767" name="Physics Modifier">
+        <value nybble="1-2" title="Triggering Event ID"/>
     </sprite>
 </sprites>
