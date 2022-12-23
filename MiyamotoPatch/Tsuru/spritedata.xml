@@ -599,14 +599,69 @@
             <entry value="13">Vine</entry>
             <entry value="14">Yoshi Egg</entry>
         </list>
-	    <list nybble="2" title="Animation">
+        <list nybble="2" title="Animation">
             <entry value="0">Standard</entry>
             <entry value="1">Underground</entry>
             <entry value="2">Lava</entry>
             <entry value="3">Lava 2</entry>
         </list>
     </sprite>
-    <sprite id="767" name="Physics Modifier">
-        <value nybble="1-2" title="Triggering Event ID"/>
+    <sprite id="767" name="Physics Modifier"/>
+    <sprite id="768" name="Music Note">
+        <value nybble="1-2" title="Manager ID"/>
+        <list nybble="3" title="Note Sound">
+            <entry value="0">First C</entry>
+            <entry value="1">D</entry>
+            <entry value="2">E</entry>
+            <entry value="3">F</entry>
+            <entry value="4">G</entry>
+            <entry value="5">A</entry>
+            <entry value="6">B</entry>
+            <entry value="7">Second C</entry>
+        </list>
+        <list nybble="20" title="Movement Type">
+			<entry value="0">None</entry>
+			<entry value="1">Sway Or Spin (68, 69, 116, 118)</entry>
+			<entry value="2">Bolt (238)</entry>
+			<entry value="3">Path (100)</entry>
+			<entry value="4">Two-Way (70)</entry>
+			<entry value="6">BoltMushroom (241)</entry>
+			<entry value="7">No-bolt Mushroom (242)</entry>
+			<entry value="8">Shifting Platform (132)</entry>
+			<entry value="9">Spinning (214, 484)</entry>
+			<entry value="10">Rolling Hill (265)</entry>
+			<entry value="11">Moving Mushroom Lift (210)</entry>
+		</list>
+        <value nybble="21-22" title="Movement ID"/>
+    </sprite>
+    <sprite id="769" name="Music Note Manager" note="Spawns a clef that, when collected, spawns a bunch of notes. Collect them all within the time limit for an item!">
+        <value nybble="1-2" title="Manager ID"/>
+        <value nybble="3-4" title="Target Note Count" comment="The required number of notes with a matching ID to activate an event."/>
+        <list nybble="5" title="Powerup" comment="The powerup reward once all notes are collected.">
+            <entry value="0">Mushroom</entry>
+            <entry value="1">Fire Flower</entry>
+            <entry value="2">Ice Flower</entry>
+            <entry value="3">Mini Mushroom</entry>
+            <entry value="4">Propeller Mushroom</entry>
+            <entry value="5">Penguin</entry>
+            <entry value="6">Acorn</entry>
+            <entry value="7">1-up Mushroom</entry>
+            <entry value="8">3-up Moon</entry>
+        </list>
+        <value nybble="6-7" title="Time Limit" comment="In seconds."/>
+        <list nybble="20" title="Movement Type">
+			<entry value="0">None</entry>
+			<entry value="1">Sway Or Spin (68, 69, 116, 118)</entry>
+			<entry value="2">Bolt (238)</entry>
+			<entry value="3">Path (100)</entry>
+			<entry value="4">Two-Way (70)</entry>
+			<entry value="6">BoltMushroom (241)</entry>
+			<entry value="7">No-bolt Mushroom (242)</entry>
+			<entry value="8">Shifting Platform (132)</entry>
+			<entry value="9">Spinning (214, 484)</entry>
+			<entry value="10">Rolling Hill (265)</entry>
+			<entry value="11">Moving Mushroom Lift (210)</entry>
+		</list>
+        <value nybble="21-22" title="Movement ID"/>
     </sprite>
 </sprites>
