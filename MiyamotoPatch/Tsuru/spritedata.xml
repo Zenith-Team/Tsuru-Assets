@@ -674,4 +674,28 @@
 		</list>
         <value nybble="21-22" title="Movement ID"/>
     </sprite>
+	    <sprite id="770" name="Peepa">
+        <checkbox nybble="1" title="Has Platform"/>
+        <list nybble="2" title="Platform Type">
+            <entry value="0">Wood</entry>
+            <entry value="1">Stone</entry>
+            <entry value="3">Bolt Platform</entry>
+            <entry value="7">Wood Snow</entry>
+            <entry value="8">Cloud</entry>
+        </list>
+        <list nybble="20" title="Movement Type">
+			<entry value="0">None</entry>
+			<entry value="1">Sway Or Spin (68, 69, 116, 118)</entry>
+			<entry value="2">Bolt (238)</entry>
+			<entry value="3">Path (100)</entry>
+			<entry value="4">Two-Way (70)</entry>
+			<entry value="6">BoltMushroom (241)</entry>
+			<entry value="7">No-bolt Mushroom (242)</entry>
+			<entry value="8">Shifting Platform (132)</entry>
+			<entry value="9">Spinning (214, 484)</entry>
+			<entry value="10">Rolling Hill (265)</entry>
+			<entry value="11">Moving Mushroom Lift (210)</entry>
+		</list>
+        <value nybble="21-22" title="Movement ID"/>
+    </sprite>
 </sprites>
