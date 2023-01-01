@@ -139,6 +139,43 @@ class SpriteImage_Biddybud(SLib.SpriteImage_Static):  # 758
 
     def loadImages():
         SLib.loadIfNotInImageCache('Biddybud', 'biddybud_red.png')
+        
+class SpriteImage_BasaltBones(SLib.SpriteImage_Static):  # 760
+    def __init__(self, parent):
+        super().__init__(
+            parent,
+            3.75,
+            ImageCache['BasaltBones'],
+            (-32, -40),
+        )
+
+    def loadImages():
+        SLib.loadIfNotInImageCache('BasaltBones', 'basaltbones.png')
+        
+class SpriteImage_Peepa(SLib.SpriteImage_Static):  # 770 TODO: add platform variant
+    def __init__(self, parent):
+        super().__init__(
+            parent,
+            3.75,
+            ImageCache['Peepa'],
+            (0, 0),
+        )
+
+    def loadImages():
+        SLib.loadIfNotInImageCache('Peepa', 'peepa.png')
+
+class SpriteImage_StarCoinShard(SLib.SpriteImage_Static):  # 729
+    def __init__(self, parent):
+        super().__init__(
+            parent,
+            3.75,
+            ImageCache['StarCoinShard'],
+            (-8, -8),
+        )
+
+    def loadImages():
+        SLib.loadIfNotInImageCache('StarCoinShard', 'star_coin_shard.png')
+       
 
 ImageClasses = {
     724: SpriteImage_ActorSpawner,
@@ -150,4 +187,7 @@ ImageClasses = {
     734: SpriteImage_TimeClock,
     749: SpriteImage_Scuttlebug,
     758: SpriteImage_Biddybud,
+    760: SpriteImage_BasaltBones,
+    770: SpriteImage_Peepa,
+    729: SpriteImage_StarCoinShard,
 }
