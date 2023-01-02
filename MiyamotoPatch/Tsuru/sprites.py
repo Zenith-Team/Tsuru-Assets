@@ -152,17 +152,33 @@ class SpriteImage_BasaltBones(SLib.SpriteImage_Static):  # 760
     def loadImages():
         SLib.loadIfNotInImageCache('BasaltBones', 'basaltbones.png')
         
-class SpriteImage_Peepa(SLib.SpriteImage_Static):  # 770 TODO: add platform variant
+class SpriteImage_Peepa(SLib.SpriteImage_StaticMultiple):  # 770 TODO: add different platform variations?
     def __init__(self, parent):
         super().__init__(
             parent,
             3.75,
-            ImageCache['Peepa'],
-            (0, 0),
         )
 
+        self.xOffset = 0
+
+    @staticmethod
     def loadImages():
+        SLib.loadIfNotInImageCache('PeepaWoodPlat', 'peepa_platform.png')
         SLib.loadIfNotInImageCache('Peepa', 'peepa.png')
+          
+    def dataChanged(self):
+        has_platform = (self.parent.spritedata[0] >> 1) & 8       
+        
+        if has_platform == 0:
+            self.image = ImageCache['Peepa']
+            
+        elif has_platform == 8:
+            self.image = ImageCache['PeepaWoodPlat']
+            self.xOffset = -24
+            
+
+        super().dataChanged()
+
 
 class SpriteImage_StarCoinShard(SLib.SpriteImage_Static):  # 729
     def __init__(self, parent):
@@ -175,6 +191,55 @@ class SpriteImage_StarCoinShard(SLib.SpriteImage_Static):  # 729
 
     def loadImages():
         SLib.loadIfNotInImageCache('StarCoinShard', 'star_coin_shard.png')
+        
+class SpriteImage_Kamiya(SLib.SpriteImage_Static):  # 743
+    def __init__(self, parent):
+        super().__init__(
+            parent,
+            3.75,
+            ImageCache['Kamiya'],
+            (-24, -32),
+        )
+
+    def loadImages():
+        SLib.loadIfNotInImageCache('Kamiya', 'kamiya.png')
+        
+class SpriteImage_Chestnut(SLib.SpriteImage_Static):  # 731
+    def __init__(self, parent):
+        super().__init__(
+            parent,
+            3.75,
+            ImageCache['Chestnut'],
+            (-8, -8),
+        )
+
+    def loadImages():
+        SLib.loadIfNotInImageCache('Chestnut', 'chestnut.png')
+        
+class SpriteImage_Flaptor(SLib.SpriteImage_Static):  # 761
+    def __init__(self, parent):
+        super().__init__(
+            parent,
+            3.75,
+            ImageCache['Flaptor'],
+            (-16, -8),
+        )
+
+    def loadImages():
+        SLib.loadIfNotInImageCache('Flaptor', 'flaptor.png')
+        
+class SpriteImage_ColdFuzzy(SLib.SpriteImage_Static):  # 753
+    def __init__(self, parent):
+        super().__init__(
+            parent,
+            3.75,
+            ImageCache['ColdFuzzy'],
+            (-16, -16),
+        )
+
+    def loadImages():
+        SLib.loadIfNotInImageCache('ColdFuzzy', 'coldfuzzy.png')
+
        
 
 ImageClasses = {
@@ -190,4 +255,8 @@ ImageClasses = {
     760: SpriteImage_BasaltBones,
     770: SpriteImage_Peepa,
     729: SpriteImage_StarCoinShard,
+    743: SpriteImage_Kamiya,
+    731: SpriteImage_Chestnut,
+    761: SpriteImage_Flaptor,
+    753: SpriteImage_ColdFuzzy
 }
