@@ -116,6 +116,43 @@ class SpriteImage_TimeClock(SLib.SpriteImage_Static):  # 734
     def loadImages():
         SLib.loadIfNotInImageCache('TimeClock', 'time_clock.png')
 
+class SpriteImage_FakeActor(SLib.SpriteImage_Static):  # 727
+    def __init__(self, parent):
+        super().__init__(
+            parent,
+            3.75,
+        )
+
+    @staticmethod
+    def loadImages():
+        SLib.loadIfNotInImageCache('fake_midway', 'fake_midwayflag.png')
+        SLib.loadIfNotInImageCache('fake_goalpoal', 'fake_goalpoal.png')
+        SLib.loadIfNotInImageCache('fake_starcoin', 'fake_starcoin.png')
+          
+    def dataChanged(self):
+        style = self.parent.spritedata[5] & 0xF
+         
+        if style == 1:
+            self.image = ImageCache['fake_goalpoal']
+
+            self.xOffset = -36
+            self.yOffset = -160
+
+        elif style == 2:
+            self.image = ImageCache['fake_starcoin']
+
+            self.xOffset = -16
+            self.yOffset = -16
+        else:
+            self.image = ImageCache['fake_midway']
+
+            self.xOffset = -8
+            self.yOffset = -56
+            
+
+        super().dataChanged()
+
+        
 class SpriteImage_Scuttlebug(SLib.SpriteImage_Static):  # 749
     def __init__(self, parent):
         super().__init__(
@@ -284,6 +321,7 @@ ImageClasses = {
     733: SpriteImage_Cataquack,
     738: SpriteImage_RainbowLight,
     726: SpriteImage_CustomDoor,
+    727: SpriteImage_FakeActor,
     734: SpriteImage_TimeClock,
     749: SpriteImage_Scuttlebug,
     758: SpriteImage_Biddybud,
