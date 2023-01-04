@@ -275,7 +275,32 @@ class SpriteImage_Kamiya(SLib.SpriteImage_Static):  # 743
 
     def loadImages():
         SLib.loadIfNotInImageCache('Kamiya', 'kamiya.png')
+
+class SpriteImage_BeepBlock(SLib.SpriteImage_Static):  # 730
+    def __init__(self, parent):
+        super().__init__(
+            parent,
+            3.75,
+        )
+
+    @staticmethod
+    def loadImages():
+        SLib.loadIfNotInImageCache('beep_block_red', 'beep_block_red.png')
+        SLib.loadIfNotInImageCache('beep_block_blue', 'beep_block_blue.png')
+          
+    def dataChanged(self):
+        animationStyle = (self.parent.spritedata[0] >> 1) & 8
         
+        if animationStyle == 8:
+            self.image = ImageCache['beep_block_blue']
+            
+        else:
+             self.image = ImageCache['beep_block_red']
+            
+
+        super().dataChanged()
+        
+             
 class SpriteImage_Chestnut(SLib.SpriteImage_Static):  # 731
     def __init__(self, parent):
         super().__init__(
@@ -322,6 +347,7 @@ ImageClasses = {
     738: SpriteImage_RainbowLight,
     726: SpriteImage_CustomDoor,
     727: SpriteImage_FakeActor,
+    730: SpriteImage_BeepBlock,
     734: SpriteImage_TimeClock,
     749: SpriteImage_Scuttlebug,
     758: SpriteImage_Biddybud,
