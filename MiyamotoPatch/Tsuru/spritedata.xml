@@ -705,4 +705,15 @@
 		</list>
         <value nybble="21-22" title="Movement ID"/>
     </sprite>
+    <sprite id="771" name="Solid">
+        <value nybble="1" title="Point 1 X" />
+        <checkbox nybble="2" title="Point 1 X Negative" />
+        <value nybble="3" title="Point 1 Y" />
+        <checkbox nybble="4" title="Point 1 Y Negative" />
+        <value nybble="5" title="Point 2 X" />
+        <checkbox nybble="6" title="Point 2 X Negative" />
+        <value nybble="7" title="Point 2 Y" />
+        <checkbox nybble="8" title="Point 2 Y Negative" />
+        <value nybble="9" title="Rotation" />
+    </sprite>
 </sprites>
