@@ -13,8 +13,15 @@
         <value nybble="19-20" title="Outer Alpha Value"/>
     </sprite>
     <sprite id="724" name="Actor Spawner">
-        <value nybble="1-2" title="Triggering Event ID"/>
-        <list nybble="21" title="ID Type">
+        <value nybble="1-2" title="Triggering Event ID" mask="4"/>
+        <list bit="81-82" title="Usage Mode">
+            <entry value="0">Multi Use</entry>
+            <entry value="1">Single Use</entry>
+            <entry value="2">Despawn When Event is Deactivated</entry>
+            <entry value="3">Only Appear While Event is Active</entry>
+        </list>
+        <checkbox bit="83" title="Use Nybbles 21-24"/>
+        <list bit="84" title="ID Type">
             <entry value="0">Profile ID</entry>
             <entry value="1">Sprite ID</entry>
         </list>
@@ -31,10 +38,10 @@
         <value nybble="12" title="Child Nybble 12"/>
         <value nybble="13" title="Child Nybble 13"/>
         <value nybble="14" title="Child Nybble 14"/>
-        <value nybble="15" title="Child Nybble 15"/>
-        <value nybble="16" title="Child Nybble 16"/>
-        <value nybble="17" title="Child Nybble 17"/>
-        <value nybble="18" title="Child Nybble 18"/>
+        <value nybble="15" title="Child Nybble 15/21"/>
+        <value nybble="16" title="Child Nybble 16/22"/>
+        <value nybble="17" title="Child Nybble 17/23"/>
+        <value nybble="18" title="Child Nybble 18/24"/>
         <value nybble="19" title="Child Nybble 19"/>
         <value nybble="20" title="Child Nybble 20"/>
     </sprite>
