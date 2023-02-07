@@ -13,7 +13,7 @@
         <value nybble="19-20" title="Outer Alpha Value"/>
     </sprite>
     <sprite id="724" name="Actor Spawner">
-        <value nybble="1-2" title="Triggering Event ID" mask="4"/>
+        <value nybble="1-2" title="Triggering Event ID"/>
         <list bit="81-82" title="Usage Mode">
             <entry value="0">Multi Use</entry>
             <entry value="1">Single Use</entry>
