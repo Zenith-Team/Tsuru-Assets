@@ -2,6 +2,21 @@
 <!-- Miyamoto Spritedata Patch for Tsuru -->
 
 <sprites>
+	<sprite id="44" name="Red Coin Ring" notes="Red coins appear when a player jumps through this ring. Its prime use is to spawn red coins. When you collect all 8 red coins you will get a powerup.">
+		<value nybble="3-4" title="Target Event ID" comment="Use this to link the red ring with the red coins it spawns."/>
+		<list nybble="11" title="Reward" comment="This determines the powerup reward given when Mario is small or super. (* This WILL crash if you're small...but only in NSLU) ">
+			<entry value="0">Fire flower</entry>
+			<entry value="1">Propeller Mushroom</entry>
+			<entry value="2">Penguin suit</entry>
+			<entry value="3">Ice flower</entry>
+			<entry value="4">Acorn mushroom</entry>
+			<entry value="5">1-Up*</entry>
+			<entry value="6">Super Mushroom</entry>
+			<entry value="7">Super Mushroom</entry>
+		</list>
+		<checkbox nybble="12" title="Shift 1/2 block to the right" comment="This shifts the coin ring 1/2 block to the right."/>
+		<value nybble="14-20" title="Active Time" comment="Default value is 60"/>
+	</sprite>
     <sprite id="198" name="Colored Particles">
         <value nybble="5-6" title="Inner Red Value"/>
         <value nybble="7-8" title="Inner Green Value"/>
@@ -12,6 +27,30 @@
         <value nybble="17-18" title="Outer Blue Value"/>
         <value nybble="19-20" title="Outer Alpha Value"/>
     </sprite>
+	<sprite id="402" name="Green Coin Ring" notes="Gives you a chance to get a powerup.">
+		<value nybble="3-4" title="Target Event ID" comment="Use this to assign green coins to this sprite."/>
+		<value nybble="5" title="Unknown Value 5"/>
+		<list nybble="11" title="Reward">
+			<entry value="0">Fire Flower</entry>
+			<entry value="1">Propeller</entry>
+			<entry value="2">Penguin</entry>
+			<entry value="3">Ice Flower</entry>
+			<entry value="4">Acorn</entry>
+			<entry value="5">Penguin</entry>
+			<entry value="6">Penguin</entry>
+			<entry value="7">Penguin</entry>
+			<entry value="8">Penguin</entry>
+			<entry value="9">Penguin</entry>
+			<entry value="10">Penguin</entry>
+			<entry value="11">Penguin</entry>
+			<entry value="12">Penguin</entry>
+			<entry value="13">Penguin</entry>
+			<entry value="14">Ice Flower</entry>
+			<entry value="15">Penguin</entry>
+		</list>
+		<checkbox nybble="12" title="Shift 1/2 block to the right" comment="This shifts the coin ring 1/2 block to the right."/>
+		<value nybble="14-20" title="Active Time" comment="Default value is 24"/>
+	</sprite>
     <sprite id="724" name="Actor Spawner">
         <value nybble="1-2" title="Triggering Event ID"/>
         <list nybble="21" title="ID Type">
@@ -715,5 +754,28 @@
         <value nybble="7" title="Point 2 Y" />
         <checkbox nybble="8" title="Point 2 Y Negative" />
         <value nybble="9" title="Rotation" />
+    </sprite>
+    <sprite id="772" name="Universal Movement Controller">
+        <value nybble="1-2" title="Target ID" comment="Set the 'Initial State' number of the target sprite to match with this number"/>
+        <list nybble="20" title="Movement Type">
+			<entry value="0">None</entry>
+			<entry value="1">Sway Or Spin (68, 69, 116, 118)</entry>
+			<entry value="2">Bolt (238)</entry>
+			<entry value="3">Path (100)</entry>
+			<entry value="4">Two-Way (70)</entry>
+			<entry value="6">BoltMushroom (241)</entry>
+			<entry value="7">No-bolt Mushroom (242)</entry>
+			<entry value="8">Shifting Platform (132)</entry>
+			<entry value="9">Spinning (214, 484)</entry>
+			<entry value="10">Rolling Hill (265)</entry>
+			<entry value="11">Moving Mushroom Lift (210)</entry>
+		</list>
+        <value nybble="21-22" title="Movement ID"/>
+        <checkbox nybble="3" title="Safe Mode" comment="Only apply to specific sprites"/>
+        <list nybble="4" title="Safe Mode Type">
+            <entry value="0">Sprite ID</entry>
+            <entry value="1">Profile ID</entry>
+        </list>
+        <value nybble="5-7" title="Safe Mode ID" comment="Target sprite/profile ID. Only applies when safe mode is active"/>
     </sprite>
 </sprites>
