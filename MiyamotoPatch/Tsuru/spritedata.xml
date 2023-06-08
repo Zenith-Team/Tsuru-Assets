@@ -151,6 +151,8 @@
             <entry value="1">Electric</entry>
             <entry value="2">Toxic</entry>
             <entry value="3">Hot</entry>
+            <entry value="4">Left Current</entry>
+            <entry value="5">Right Current</entry>
         </list>
     </sprite>
     <sprite id="742" name="Stingby"></sprite>
