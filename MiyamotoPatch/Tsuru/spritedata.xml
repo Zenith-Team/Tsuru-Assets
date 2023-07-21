@@ -705,6 +705,9 @@
             <entry value="6">Acorn</entry>
             <entry value="7">1-up Mushroom</entry>
             <entry value="8">3-up Moon</entry>
+            <entry value="9">1st star coin</entry>
+            <entry value="10">2nd star coin</entry>
+            <entry value="11">3rd star coin</entry>
         </list>
         <value nybble="6-7" title="Time Limit" comment="In seconds."/>
         <list nybble="20" title="Movement Type">
@@ -779,5 +782,15 @@
             <entry value="1">Profile ID</entry>
         </list>
         <value nybble="5-7" title="Safe Mode ID" comment="Target sprite/profile ID. Only applies when safe mode is active"/>
+    </sprite>
+    <sprite id="773" name="Event Activated Time Changer">
+        <value nybble="1-2" title="Triggering Event ID"/>
+        <value nybble="13-15" title="Time (seconds)"/>
+        
+        <list nybble="8" title="Type">
+            <entry value="0">Add</entry>
+            <entry value="1">Subtract</entry>
+            <!--<entry value="2">Set</entry>-->
+        </list>
     </sprite>
 </sprites>
