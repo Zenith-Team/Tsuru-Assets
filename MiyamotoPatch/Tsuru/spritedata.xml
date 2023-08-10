@@ -20,7 +20,7 @@
             <entry value="2">Despawn When Event is Deactivated</entry>
             <entry value="3">Only Appear While Event is Active</entry>
         </list>
-        <checkbox bit="83" title="Use Nybbles 21-24"/>
+        <checkbox bit="83" title="Use Nybbles 21-24" comment="Nybbles 15-18 are used if unchecked"/>
         <list bit="84" title="ID Type">
             <entry value="0">Profile ID</entry>
             <entry value="1">Sprite ID</entry>
