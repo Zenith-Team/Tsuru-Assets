@@ -9,3 +9,6 @@ Assets repository for the [Tsuru](https://github.com/Luminyx1/Tsuru-Dev) project
   - `VSCode/`: Workspace configuration files for [VS Code](https://code.visualstudio.com/). This is the only editor we (Tsuru maintainers) will support, but PRs for config files of other editors are welcome.
 
 - `game/`: A partial representation of the NSMBU v1.3 filesystem containing only custom assets of the project, to be easily merged with the filesystem of a clean base ROM.
+
+## Downloading
+To download a single folder, we recommend [Download GitHub directory](https://download-directory.github.io/).
