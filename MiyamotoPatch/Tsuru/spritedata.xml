@@ -797,7 +797,8 @@
         <list nybble="8" title="Type">
             <entry value="0">Add</entry>
             <entry value="1">Subtract</entry>
-            <!--<entry value="2">Set</entry>-->
+            <entry value="2">Set</entry>
         </list>
+        <checkbox nybble="11" title="Multiple uses"/>
     </sprite>
 </sprites>
