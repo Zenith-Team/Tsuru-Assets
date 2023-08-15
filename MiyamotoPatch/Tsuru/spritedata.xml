@@ -801,4 +801,31 @@
         </list>
         <checkbox nybble="11" title="Multiple uses"/>
     </sprite>
+    <sprite id="774" name="One Way Platform">
+        <value nybble="1-2" title="Triggering Event ID"/>
+        <value nybble="5" title="Width"/>
+        <list nybble="6" title="Platform Type">
+            <entry value="0">Wood</entry>
+            <entry value="1">Stone</entry>
+            <entry value="3">Bolt Platform</entry>
+            <entry value="7">Wood Snow</entry>
+            <entry value="8">Cloud</entry>
+        </list>
+        <list nybble="7" title="Direction">
+            <entry value="0">Up</entry>
+            <entry value="1">Down</entry>
+            <entry value="2">Left</entry>
+            <entry value="3">Right</entry>
+        </list>
+        <list nybble="20" title="Movement Type">
+			<entry value="0">None</entry>
+			<entry value="2">Bolt (238)</entry>
+			<entry value="3">Path (100)</entry>
+			<entry value="4">Two-Way (70)</entry>
+			<entry value="6">BoltMushroom (241)</entry>
+			<entry value="7">No-bolt Mushroom (242)</entry>
+			<entry value="8">Shifting Platform (132)</entry>
+		</list>
+        <value nybble="21-22" title="Movement ID"/>
+    </sprite>
 </sprites>
