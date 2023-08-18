@@ -11,4 +11,5 @@ Assets repository for the [Tsuru](https://github.com/Luminyx1/Tsuru-Dev) project
 - `game/`: A partial representation of the NSMBU v1.3 filesystem containing only custom assets of the project, to be easily merged with the filesystem of a clean base ROM.
 
 ## Downloading
-To download a single folder, we recommend [Download GitHub directory](https://download-directory.github.io/).
+You can get the latest release in the releases tab. This is automatically updated whenever changes are made.
+Alternatively, to download a single folder, we recommend [Download GitHub directory](https://download-directory.github.io/).
