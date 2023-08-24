@@ -671,7 +671,9 @@
             <entry value="3">Lava 2</entry>
         </list>
     </sprite>
-    <sprite id="767" name="Physics Modifier"/>
+    <sprite id="767" name="Physics Modifier" comment="Enables low-gravity when triggered">
+    	<value nybble="1-2" title="Triggering Event ID"/>
+    </sprite>
     <sprite id="768" name="Music Note">
         <value nybble="1-2" title="Manager ID"/>
         <list nybble="3" title="Note Sound">
