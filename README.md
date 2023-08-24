@@ -3,7 +3,7 @@ Assets repository for the [Tsuru](https://github.com/Luminyx1/Tsuru-Dev) project
 
 ## Repository Structure
 - `MiyamotoPatch/`: Relevant [Miyamoto Level Editor](https://github.com/aboood40091/Miyamoto) patches and spritedata.
-  - `Tsuru/`: The main Miyamoto patch of the project. Contains spritedata of custom sprites. ([Download](https://github.com/Luminyx1/Tsuru-Assets/releases/tag/latest-miyamoto-patch))
+  - `Tsuru/`: The main Miyamoto patch of the project. Contains spritedata of custom sprites.
 
 - `editors/`: Development workspace configuration files for code editors intellisense and other features.
   - `VSCode/`: Workspace configuration files for [VS Code](https://code.visualstudio.com/). This is the only editor we (Tsuru maintainers) will support, but PRs for config files of other editors are welcome.
@@ -11,5 +11,5 @@ Assets repository for the [Tsuru](https://github.com/Luminyx1/Tsuru-Dev) project
 - `game/`: A partial representation of the NSMBU v1.3 filesystem containing only custom assets of the project, to be easily merged with the filesystem of a clean base ROM.
 
 ## Downloading
-You can get the latest release in the releases tab. This is automatically updated whenever changes are made.
+You can get the latest release in the [releases tab](https://github.com/Zenith-Team/Tsuru-Assets/releases/latest). This is automatically updated whenever changes are made.
 Alternatively, to download a single folder, we recommend [Download GitHub directory](https://download-directory.github.io/).
