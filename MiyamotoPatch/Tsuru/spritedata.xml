@@ -803,4 +803,9 @@
         </list>
         <checkbox nybble="11" title="Multiple uses"/>
     </sprite>
+    <sprite id="774" name="Custom Powerup Question (?) Block">
+        <list nybble="1" title="Type">
+            <entry value="0">Hammer</entry>
+        </list>
+    </sprite>
 </sprites>
