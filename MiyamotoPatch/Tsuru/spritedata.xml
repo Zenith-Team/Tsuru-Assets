@@ -834,4 +834,5 @@
 			<entry value="8">Shifting Platform (132)</entry>
 		</list>
         <value nybble="21-22" title="Movement ID"/>
+    </sprite>
 </sprites>
