@@ -806,6 +806,13 @@
     <sprite id="774" name="Custom Powerup Question (?) Block">
         <list nybble="1" title="Type">
             <entry value="0">Hammer</entry>
+            <entry value="1">Poison Mushroom</entry>
+            <entry value="2">PAcorn</entry>
+        </list>
+        <list nybble="2" title="Block" comment="* means that the option is unfinished and you probably shouldn't use it.">
+            <entry value="0">Question Block</entry>
+            <entry value="1">Brick Block</entry>
+            <entry value="2">Hidden Block*</entry>
         </list>
     </sprite>
     <sprite id="775" name="One Way Platform">
