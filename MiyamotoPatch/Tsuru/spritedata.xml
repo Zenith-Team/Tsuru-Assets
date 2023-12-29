@@ -701,7 +701,7 @@
 		</list>
         <value nybble="21-22" title="Movement ID"/>
     </sprite>
-    <sprite id="769" name="Music Note Manager" note="Spawns a clef that, when collected, spawns a bunch of notes. Collect them all within the time limit for an item!">
+    <sprite id="769" name="Music Note Manager" notes="Spawns a clef that, when collected, spawns a bunch of notes. Collect them all within the time limit for an item!">
         <value nybble="1-2" title="Manager ID"/>
         <value nybble="3-4" title="Target Note Count" comment="The required number of notes with a matching ID to activate an event."/>
         <list nybble="5" title="Powerup" comment="The powerup reward once all notes are collected.">
@@ -841,5 +841,35 @@
 			<entry value="8">Shifting Platform (132)</entry>
 		</list>
         <value nybble="21-22" title="Movement ID"/>
+    </sprite>
+    <sprite id="776" name="Wave Platform">
+        <list nybble="6" title="Platform Type">
+            <entry value="0">Wood</entry>
+            <entry value="1">Stone</entry>
+            <entry value="3">Bolt Platform</entry>
+            <entry value="7">Wood Snow</entry>
+            <entry value="8">Cloud</entry>
+        </list>
+        <value nybble="12" title="Width"/>
+    </sprite>
+    <sprite id="777" name="Actor Manipulator" notes="You can manipulate an actor's many variables. This actor can crash your game if you aren't careful. More info in the 'ID' comment.">
+        <value nybble="1-2" title="Triggering Event ID"/>
+        <checkbox nybble="6" title="Event Activated" comment="Rather than activating right away, this will allow you to activate using an event."/>
+        <value nybble="7-8" title="Target ID" comment="Deletes the actor with the same 'Initial State' number as this value."/>
+        <list nybble="9" title="ID Type">
+            <entry value="0">Profile ID</entry>
+            <entry value="1">Sprite ID</entry>
+        </list>
+        <value nybble="10-12" title="ID" comment="The Sprite/Profile ID you want to target. Depending on the actor, some or all of the options below will crash your game. Sometimes, the crashing is inconsistent and random. If so, don't use this actor on them as they are most likely incompatiple with this actor."/>
+        <checkbox nybble="5" title="Delete Actor" comment="Checking this will delete the actor."/>
+        <checkbox nybble="4" title="Invisible" comment="Checking this will make the actor invisible."/>
+        <checkbox nybble="3" title="Inactive" comment="Checking this will disable the actor's functionality."/>
+        <checkbox nybble="13" title="Change Scale" comment="This will change the scale of an actor. This does not change its hitbox."/>
+        <value nybble="14" title="Scale X"/>
+        <value nybble="15" title="Scale Y"/>
+        <value nybble="16" title="Scale Z"/>
+        <checkbox nybble="17" title="Change Size" comment="I don't even know what this does, let me know what this does so I can update this comment accordingly. -PoeDev"/>
+        <value nybble="18" title="Size X"/>
+        <value nybble="19" title="Size Y"/>
     </sprite>
 </sprites>
