@@ -872,4 +872,9 @@
         <value nybble="18" title="Size X"/>
         <value nybble="19" title="Size Y"/>
     </sprite>
+    <sprite id="778" name="Floaty Goomba">
+        <checkbox nybble="1" title="Only Floaty"/>
+    </sprite>
+	<sprite id="779" name="Piranha Sprout"/>
+    <sprite id="780" name="Poison Piranha"/>
 </sprites>
